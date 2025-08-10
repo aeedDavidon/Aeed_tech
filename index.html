@@ -5,267 +5,245 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aeed</title>
+    <title>Aeed Tech Portfolio</title>
 
-    <!-- swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- box icons -->
+    <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- custom css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" type="image/x-icon" href="/images/Aeed-logo.png">
 </head>
 
-<body>
-
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo"> <span class="text-primary">
-               <img src="images/Aeed-logo_With_title.png" alt="Okolowhite Logo" style="height: 50px; margin-right: 0px; margin-left: 10px; width: 100">
-<span class="text-primary">Aeed</span>
-        <span class="text-dark">Tech</span>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+<body data-bs-theme="light">
+    <!-- Header -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Aeed-logo_With_title.png" alt="Aeed Tech Logo" height="50" class="d-inline-block align-top me-2">
+                    <span class="text-primary">Aeed</span><span class="text-dark">Tech</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- <button class="btn" id="darkMode-toggle">
+                        <i class='bx bx-moon'></i>
+                    </button> -->
+                </div>
+            </div>
         </nav>
-
-        <div class="bx bx-moon" id="darkMode-icon"></div>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, I am</h3>
-            <h1>Anakor Emmanuel</h1>
-            <p>
-                I’m a passionate full-stack developer and computer science graduate skilled in crafting beautiful, functional, and impactful digital solutions. With expertise spanning web technologies (HTML, CSS, JavaScript, PHP, Bootstrap), mobile app development (Flutter, Dart, Firebase), and programming languages (Java, C++, Python), I bring both creativity and technical precision to every project. My experience also covers database systems (MySQL, SQL, PostgreSQL), UI/UX design (Figma), and graphic design (Photoshop, Illustrator), enabling me to deliver complete, user-centered products from concept to launch. I thrive in collaborative environments, adapt quickly to new challenges, and am driven to create technology that empowers people and makes a difference.
-            </p>
-            <p>I’m a Computer Science graduate from Dominican University, Ibadan, with a strong foundation in software development, web technologies, and mobile app development.</p>
+    <!-- Home Section -->
+    <section class="home py-5" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="home-content">
+                        <h3 class="text-muted">Hello, I am</h3>
+                        <h1 class="display-4 fw-bold mb-3">Anakor Emmanuel</h1>
+                        <p class="lead mb-4">
+                            I'm a passionate full-stack developer and computer science graduate skilled in crafting beautiful, functional, and impactful digital solutions. With expertise spanning web technologies (HTML, CSS, JavaScript, PHP, Bootstrap), mobile app development (Flutter, Dart, Firebase), and programming languages (Java, C++, Python), I bring both creativity and technical precision to every project.
+                        </p>
+                        <p class="mb-4">I'm a Computer Science graduate from Dominican University, Ibadan, with a strong foundation in software development, web technologies, and mobile app development.</p>
 
-            <div class="social-media">
-                <a href="https://web.facebook.com/aeed.davidon.yp" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <!-- <a href="" target="_blank"><i class='bx bxl-instagram-alt'></i></a> -->
-                <!-- <a href="https://www.youtube.com/channel/UCmM_kBLw4nrGbh4-YAEv7SA" target="_blank"><i class='bx bxl-youtube'></i></a> -->
-                <a href="https://github.com/aeedDavidon" target="_blank"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <a href="https://www.linkedin.com/in/anakor-emmanuel-8518b1286/" target="_blank" class="btn">View LinkedIn</a>
-        </div>
-
-        <div class="profession-container">
-            <div class="profession-box">
-    <div class="profession" style="--i:0;">
-        <i class='bx bx-code-alt'></i>
-        <h3>Web Developer</h3>
-    </div>
-    <div class="profession" style="--i:1;">
-        <i class='bx bx-mobile-alt'></i>
-        <h3>Mobile App<br>Developer</h3>
-    </div>
-    <div class="profession" style="--i:2;">
-        <i class='bx bx-data'></i>
-        <h3>Database<br>Developer</h3>
-    </div>
-    <div class="profession" style="--i:3;">
-        <i class='bx bx-paint'></i>
-        <h3>UI/UX Designer</h3>
-    </div>
-    <div class="profession" style="--i:4;">
-        <i class='bx bx-brush'></i>
-        <h3>Graphic Designer</h3>
-    </div>
-    <div class="profession" style="--i:5;">
-        <i class='bx bx-terminal'></i>
-        <h3>Programmer</h3>
-    </div>
-    <div class="profession" style="--i:6;">
-        <i class='bx bx-shield-quarter'></i>
-        <h3>Cybersecurity <br>Enthusiast</h3>
-    </div>
-    <div class="profession" style="--i:7;">
-        <i class='bx bx-git-branch'></i>
-        <h3>Git/GitHub User</h3>
-    </div>
-
-    <div class="circle"></div>
-</div>
-
-
-            <div class="overlay"></div>
-        </div>
-
-        <div class="home-img">
-            <img src="images/me_choir-removebg-preview-2.png" alt="">
-        </div>
-    </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/wed-removebg-preview.png" alt="">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>
-                Hey! I’m Emmanuel — a curious and driven web developer who thrives on learning, building, and solving problems through code.
-            </h3>
-            <p>
-                This website is my personal portfolio and blog, where I share projects, insights, and tutorials on web development, mobile app development, UI/UX design, 
-                databases, and other tech skills I’ve mastered along my journey as a Computer Science graduate.
-            </p>
-            <p>
-                Thank you for visiting my website and exploring my work. I hope you found my projects, tutorials, and insights useful and inspiring. Here, I share my journey as a full-stack developer, covering topics from web development and mobile apps to UI/UX design, databases, and emerging tech trends. Subscribe to my newsletter for weekly updates, tips, 
-                and industry insights. I’m always open to feedback, ideas, and collaborations — I’d love to hear from you!
-            </p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
-
-    <!-- services section design -->
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-<p>I specialize in creating responsive, user-friendly websites using HTML, CSS, JavaScript, PHP, and Bootstrap. My focus is on building functional, visually appealing solutions that provide great user experiences.</p>
-<a href="#" class="btn">Read More</a>
-
-            </div>
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Graphic Design</h3>
-<p>I create visually engaging designs using Adobe Photoshop and Illustrator, crafting graphics, branding materials, and UI elements that enhance digital products and strengthen brand identity.</p>
-<a href="#" class="btn">Read More</a>
-
+                        <div class="social-media mb-4">
+                            <a href="https://web.facebook.com/aeed.davidon.yp" target="_blank" class="btn btn-outline-primary btn-circle me-2"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://github.com/aeedDavidon" target="_blank" class="btn btn-outline-primary btn-circle me-2"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/anakor-emmanuel-8518b1286/" target="_blank" class="btn btn-primary ms-2">View LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="home-img text-center">
+                        <img src="images/me_choir-removebg-preview-2.png" alt="Profile Image" class="img-fluid rounded-circle" style="max-height: 500px;">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="about-img text-center">
+                        <img src="images/wed-removebg-preview.png" alt="About Image" class="img-fluid rounded" style="max-height: 500px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="about-content">
+                        <h2 class="display-4 fw-bold mb-4">About <span class="text-primary">Me</span></h2>
+                        <h3 class="mb-4">
+                            Hey! I'm Emmanuel — a curious and driven web developer who thrives on learning, building, and solving problems through code.
+                        </h3>
+                        <p class="mb-3">
+                            This website is my personal portfolio and blog, where I share projects, insights, and tutorials on web development, mobile app development, UI/UX design, databases, and other tech skills I've mastered along my journey as a Computer Science graduate.
+                        </p>
+                        <p class="mb-4">
+                            Thank you for visiting my website and exploring my work. I hope you found my projects, tutorials, and insights useful and inspiring. Here, I share my journey as a full-stack developer, covering topics from web development and mobile apps to UI/UX design, databases, and emerging tech trends.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="portfolio-container">
+    <!-- Services Section -->
+    <section class="services py-5" id="services">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center mb-5">My <span class="text-primary">Services</span></h2>
             
-            <div class="portfolio-box">
-                <img src="images/IMG-20250629-WA0004.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Chess Competition</h4>
-                    <p>Won First Runner Up Prize</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body text-center p-4">
+                            <i class='bx bx-code-alt display-4 text-primary mb-3'></i>
+                            <h3 class="card-title mb-3">Web Development</h3>
+                            <p class="card-text">
+                                I specialize in creating responsive, user-friendly websites using HTML, CSS, JavaScript, PHP, and Bootstrap. My focus is on building functional, visually appealing solutions that provide great user experiences.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-3">Read More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- <div class="portfolio-box">
-                <img src="images/IMG-20250628-WA0009.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Nice</h4>
-                    <p>Our team receiving certficate of participation in hackathon from IT H.O.D.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                <div class="col-md-6">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body text-center p-4">
+                            <i class='bx bxs-paint display-4 text-primary mb-3'></i>
+                            <h3 class="card-title mb-3">Graphic Design</h3>
+                            <p class="card-text">
+                                I create visually engaging designs using Adobe Photoshop and Illustrator, crafting graphics, branding materials, and UI elements that enhance digital products and strengthen brand identity.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-3">Read More</a>
+                        </div>
+                    </div>
                 </div>
-            </div> -->
-    
-            <!-- <div class="portfolio-box">
-                <img src="images/Gentle_me.png" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>NCIT HACKFEST 2024</h4>
-                    <p>Formed a team 'Thik xa' as team lead and built a HMS project in Laravel</p>
-                    <a href="images"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-
-    <!-- testimonial design -->
-    <div class="testimonial-container">
-        <h2 class="heading">Valuable <span>Testimonial</span></h2>
-
-        <div class="testimonial-wrapper">
-            <div class="testimonial-box mySwiper">
-                <div class="testimonial-content swiper-wrapper">
-    <div class="testimonial-slide swiper-slide">
-        <i class='bx bxs-user-circle' style="font-size: 60px; color: #FFD700;"></i>
-        <h3>Rushab Risal</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
-            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
-            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
-            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
-            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
-            dolores.</p>
-    </div>
-    <div class="testimonial-slide swiper-slide">
-        <i class='bx bxs-user-circle' style="font-size: 60px; color: #FFD700;"></i>
-        <h3>Pranil Poudel</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
-            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
-            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
-            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
-            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
-            dolores.</p>
-    </div>
-</div>
-
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
     </section>
 
-    <!-- footer design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+    <!-- Portfolio Section -->
+    <section class="portfolio py-5" id="portfolio">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center mb-5">Latest <span class="text-primary">Project</span></h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card portfolio-item">
+                        <img src="images/IMG-20250629-WA0004.jpg" class="card-img-top" alt="Chess Competition">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center bg-primary bg-opacity-75 text-white opacity-0 hover-opacity-100 transition">
+                            <h4 class="card-title">Chess Competition</h4>
+                            <p class="card-text">Won First Runner Up Prize</p>
+                            <a href="#" class="btn btn-light"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more portfolio items here -->
+            </div>
         </div>
+    </section>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center mb-5">Valuable <span class="text-primary">Testimonial</span></h2>
+            
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card text-center p-4 mx-auto" style="max-width: 800px;">
+                            <i class='bx bxs-user-circle display-4 text-primary mb-3'></i>
+                            <h3>Rushab Risal</h3>
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center p-4 mx-auto" style="max-width: 800px;">
+                            <i class='bx bxs-user-circle display-4 text-primary mb-3'></i>
+                            <h3>Pranil Poudel</h3>
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact py-5" id="contact">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center mb-5">Contact <span class="text-primary">Me!</span></h2>
+            
+            <form class="contact-form mx-auto" style="max-width: 700px;">
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <input type="text" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <input type="tel" class="form-control" placeholder="Mobile Number">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Email Subject">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">Copyright &copy; 2024 | All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#home" class="btn btn-light btn-circle"><i class='bx bx-up-arrow-alt'></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- custom js -->
-    <script src="sctipt.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 
 </html>
