@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeed Tech Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="/images/Aeed-logo.png">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .about-section {
+            padding: 60px 0;
+        }
+        .profile-img {
+            max-width: 220px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .skill-badge {
+            margin: 5px;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Aeed-logo_With_title.png" alt="Aeed Tech Logo" height="50" class="d-inline-block align-top me-2">
+                    <span class="text-primary">Aeed</span><span class="text-dark">Tech</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- <button class="btn" id="darkMode-toggle">
+                        <i class='bx bx-moon'></i>
+                    </button> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+        <div class="container">
+            <img src="images/grade_1.png" alt="Profile Picture" class="profile-img mb-4">
+            <h1 class="fw-bold">Anakor Emmanuel Ebube</h1>
+            <p class="text-muted">Computer Science Graduate | Web & Mobile Developer | Graphic Designer</p>
+            <p class="mt-4">
+                I am a passionate Computer Science graduate with a strong foundation in software development 
+                including web technologies and programming tools (HTML, CSS, Bootstrap, Java, C++, JavaScript, and PHP). 
+                I have experience with database systems such as MySQL, SQL, and PostgreSQL, as well as computer hardware 
+                and networking. I’m eager to apply my technical skills, creativity, and problem-solving abilities in 
+                professional settings, and I’m always looking for opportunities to learn and contribute meaningfully to the tech industry.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="text-center">
+                <span class="badge bg-primary skill-badge">Java</span>
+                <span class="badge bg-primary skill-badge">C++</span>
+                <span class="badge bg-primary skill-badge">JavaScript</span>
+                <span class="badge bg-primary skill-badge">PHP</span>
+                <span class="badge bg-primary skill-badge">Python</span>
+                <span class="badge bg-secondary skill-badge">HTML</span>
+                <span class="badge bg-secondary skill-badge">CSS</span>
+                <span class="badge bg-secondary skill-badge">Bootstrap</span>
+                <span class="badge bg-success skill-badge">Flutter</span>
+                <span class="badge bg-success skill-badge">Dart</span>
+                <span class="badge bg-info text-dark skill-badge">Firebase</span>
+                <span class="badge bg-warning text-dark skill-badge">Photoshop</span>
+                <span class="badge bg-warning text-dark skill-badge">Illustrator</span>
+                <span class="badge bg-danger skill-badge">Figma</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Task Manager App:</strong> Developed using HTML, CSS, PHP, and MySQL.</li>
+                <li class="list-group-item"><strong>Ecommerce Web & APK:</strong> Web version built with HTML, CSS, JavaScript; APK built with Flutter & Dart using Firebase.</li>
+                <li class="list-group-item"><strong>ATM Simulator:</strong> Java GUI for deposits, withdrawals, and balance checks.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 AeedTech. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#about" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
+   class="btn btn-light btn-circle">
+   <i class='bx bx-up-arrow-alt'></i>
+</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeed Tech Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- GLightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/images/Aeed-logo.png">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gallery-section {
+            padding: 60px 0;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Header -->
+    <header class="header fixed-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Aeed-logo_With_title.png" alt="Aeed Tech Logo" height="50" class="d-inline-block align-top me-2">
+                    <span class="text-primary">Aeed</span><span class="text-dark">Tech</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about_me.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+
+    <!-- Gallery Section -->
+    <section id="graphics" class="gallery-section">
+        <div class="container">
+            <h1 class="text-center fw-bold mb-5">My Graphics Design Work</h1>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/Anakor-Emmanuel-.E..jpg" class="glightbox" data-gallery="gallery">
+                        <img src="images/Anakor-Emmanuel-.E..jpg" alt="Design Work 1" class="gallery-img shadow">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/Aeed-logo.png" class="glightbox" data-gallery="gallery">
+                        <img src="images/Aeed-logo.png" alt="Design Work 2" class="gallery-img shadow">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/3d.png" class="glightbox" data-gallery="gallery">
+                        <img src="images/3d.png" alt="Design Work 3" class="gallery-img shadow">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/muckup.png" class="glightbox" data-gallery="gallery">
+                        <img src="images/muckup.png" alt="Design Work 4" class="gallery-img shadow">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/wallpeper.jpg" class="glightbox" data-gallery="gallery">
+                        <img src="images/wallpeper.jpg" alt="Design Work 5" class="gallery-img shadow">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/design6.jpg" class="glightbox" data-gallery="gallery">
+                        <img src="images/design6.jpg" alt="Design Work 6" class="gallery-img shadow">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/design7.jpg" class="glightbox" data-gallery="gallery">
+                        <img src="images/design7.jpg" alt="Design Work 7" class="gallery-img shadow">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="images/design8.jpg" class="glightbox" data-gallery="gallery">
+                        <img src="images/design8.jpg" alt="Design Work 8" class="gallery-img shadow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 AeedTech. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#graphics" class="btn btn-light btn-circle"><i class='bx bx-up-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
+</body>
+</html>
